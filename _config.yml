@@ -1,0 +1,17 @@
+gems:
+  - jekyll-auto-image
+image: /images/blog/featured_standard_02.png
+
+_options:
+  content:
+    format: p h1 h2 h3 h4 h5 h6
+    bold: true
+    italic: true
+    strike: true
+    link: true
+    blockquote: true
+    numberedlist: true
+    bulletedlist: true
+    image: true
+    embed: true    
+  

@@ -1,0 +1,47 @@
+---
+layout: default
+title: New Life Wesleyan Church
+---
+
+<header id="header" class="home-parallax home-fade dark-bg header-inner">
+    <div class="color-overlay"></div>
+    <div class="container">
+        <h1>LATEST UPDATES</h1>
+        <div class="breadcrumb">
+            <a href="/index.html">Home</a> <i class="fa fa-angle-double-right"></i> <a href="/blog.html">LATEST UPDATES</a>
+
+        </div>
+    </div>
+</header>
+
+<section id="blog-single" class="section blog blog-standard">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="blog-post">
+                    <ul>
+                        {% for post in site.posts %}
+                                <header>
+                                    <h5 class="date">{{post.date| date: '%B %d, %Y' }}</h5>
+                                    <div class="blog-element">
+                                        <img src ="{{ post.image }}" class="img-responsive" alt=""/>
+                                    </div>
+                                </header>                    
+                                <h3 class="post-title">
+                                    <a href="{{ post.url }}">{{ post.title }}</a>
+                                </h3>
+                                {{ post.excerpt | truncate: 200}}
+                                <div class="read-more">
+                                    <a href="{{ post.url }}"><i class="fa fa-angle-double-right"></i> Read More</a>
+                                </div>
+                                <br><br>
+                                {% endfor %}
+                            </ul>
+                    <div class="text-center">
+                        <a href="/blog.html" class="btn btn-dark">View All <span class="fa fa-angle-double-right"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

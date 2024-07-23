@@ -1,0 +1,407 @@
+---
+layout: default
+title: New Life Wesleyan Church
+---
+<!-- Header -->
+<header id="header" class="header-wrapper home-parallax home-fade dark-bg bg-02">
+    <div class="gradient-overlay"></div>
+    <div class="header-wrapper-inner">
+        <div class="container">
+
+
+            <div class="intro">
+                <h1>NEW LIFE WESLEYAN CHURCH</h1>
+                <p>REACHING AND CONNECTING PEOPLE TO A NEW LIFE IN CHRIST</p>
+                <a href="#visit-us" class="btn btn-default-o onPageNav">PLAN YOUR VISIT</a>
+            </div><!-- /.intro -->
+
+<!--
+            <div class="intro">
+				<h1>NEW LIFE WESLEYAN CHURCH<br /><br /></h1> <h3><span >REACHING AND CONNECTING PEOPLE TO A NEW LIFE IN CHRIST</span></h3>
+                <!--<p>Thats How My Life Rolls</p>
+				<a><br /><br /></a>
+                <a href="#visit-us" class="btn btn-default-o onPageNav">PLAN YOUR VISIT</a>
+            </div>
+-->
+        </div><!-- /.container -->
+
+        <div class="arrow-down">
+            <a href="#news" class="onPageNav">
+                <i class="ion-ios-arrow-down"></i>
+            </a>
+        </div><!-- /.arrow-down -->
+
+    </div><!-- /.header-wrapper-inner -->
+</header>
+<!-- /Header -->
+<!-- Our Process -->
+
+<section id="news" class="section blog">
+    <div class="container">
+
+        <!---->
+        <header class="section-heading">
+            <h2>LATEST UPDATES</h2>
+        </header>
+        <!---->
+
+        <section id="blog-single" class="section blog blog-standard">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="blog-post">
+                            <ul>
+                                {% for post in site.posts %}
+                                {% if forloop.index == 4 %}
+                                {% break %}
+                                {% endif %}
+                                <header>
+                                    <h5 class="date">{{post.date| date: '%b %d, %Y' }}</h5>
+                                    <div class="blog-element">
+                                        <a href="{{ post.url }}">
+                                            <img src="{{ post.image }}" class="img-responsive" alt="" />
+                                        </a>
+                                    </div>
+                                </header>                    
+                                <h3 class="post-title">
+                                    <a href="{{ post.url }}">{{ post.title }}</a>
+                                </h3>
+                                {{ post.excerpt | truncate: 200}}
+                                <div class="read-more">
+                                    <a href="{{ post.url }}"><i class="fa fa-angle-double-right"></i> Read More</a>
+                                </div>
+                                <br /><br />
+                                {% endfor %}
+                            </ul>
+                            <div class="text-center">
+                                <a href="/blog.html" class="btn btn-dark">View All <span class="fa fa-angle-double-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div><!--/.container-->
+</section>
+
+<section id="visit-us" class="section footer-widgets dark-bg">
+    <div class="container">
+        <header class="section-heading">
+            <h1>PLAN YOUR VISIT</h1>
+            <h4>ALL ARE WELCOME</h4>
+        </header>
+		
+		        <div class="section-content">
+            <div class="row">
+                
+
+                    <!-- about-center -->
+                    <figure class="about-content center">
+                        <img class="img-responsive center-block" src="images/wednesday.png" alt="" />
+                    </figure>
+
+                </div><!-- col-sm-4 -->
+
+
+            </div><!-- row -->
+        </div><!-- section-content -->
+
+
+    </div><!-- container -->
+</section>
+<!-- Gallery -->
+
+<section id="team" class="section team">
+    <div class="container">
+        <header class="section-heading">
+            <h2>OUR LEADERSHIP TEAM</h2>            
+        </header>
+
+        <div class="section-content">
+            <div class="row">
+                <div class="col-sm-4 lborder">
+
+                    <!-- team-member's-bio -->
+                    <div class="team-bio">
+                        <figure>
+                            <img src="images/team/team-1.jpg" class="img-responsive center-block" alt="">
+                        </figure>
+                        <div class="team-description">
+                            <div class="member-name">Rev. Jone Kacivi</div>
+                            <div class="designation">Senior Pastor</div>
+                        </div>
+                    </div><!--/team bio-->
+
+                </div><!-- col-sm-4 -->
+
+                <div class="col-sm-4 lborder rborder">
+
+                    <!-- team-member's-bio -->
+                    <div class="team-bio">
+                        <figure>
+                            <img src="images/team/team-2.jpg" class="img-responsive center-block" alt="">
+                        </figure>
+                        <div class="team-description">
+                            <div class="member-name">Rev. Jokatama Fotu Qusiadranituraga</div>
+                            <div class="designation">Assistant Pastor</div>
+                        </div>
+                    </div><!--/team bio-->
+
+                </div><!-- col-sm-4 -->
+
+                <div class="col-sm-4 rborder">
+
+                    <!-- team-member's-bio -->
+                    <div class="team-bio">
+                        <figure>
+                            <img src="images/team/team-3.jpg" class="img-responsive center-block" alt="">
+                        </figure>
+                        <div class="team-description">
+                            <div class="member-name">Peni Bati</div>
+                            <div class="designation">Lay Pastor</div>
+                        </div>
+                    </div><!--/team bio-->
+
+                </div><!-- col-sm-4 -->
+            </div><!-- row -->
+        </div><!-- section-content -->
+    </div><!-- container -->
+</section>
+<!-- 
+
+<section id="team1" class="section blog">
+    <div class="container">
+	        <header class="section-heading">
+            <h2>OUR LEADERSHIP TEAM</h2>            
+        </header>
+
+
+        <div id="blogContent" class="section-content">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="blog-post">
+                        <header>
+                        <div class="blog-element">
+                                <img class="img-responsive" src="images/blog/1.jpg" alt="">
+                            </div>
+                        </header>
+						<div class="blog-content">
+                            <h4><a>Senior Pastor<br> <strong>Rev. Jone Kacivi</strong></a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="blog-post">
+                        <header>                            
+                            <div class="blog-element">
+                                <img class="img-responsive" src="images/blog/2.jpg" alt="">
+                            </div>
+                        </header>
+						<div class="blog-content">
+                            <h4><a>Assistant Pastor<br> <strong>Rev. Jokatama Fotu Qusiadranituraga</strong></a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="blog-post">
+                        <header>                            
+                            <div class="blog-element">
+                                <img class="img-responsive" src="images/blog/3.jpg" alt="">
+                            </div>
+                        </header>
+						<div class="blog-content">
+                            <h4><a>Lay Pastor<br> <strong>Peni Bati</strong></a></h4>
+                        </div>
+                    </div>
+                </div>		
+            </div>
+        </div>
+    </div>
+</section>
+-->
+<!--/.container-->
+
+<section id="gallery" class="section footer-widgets dark-bg">
+    <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+
+
+        <div class="row">
+            
+                <div class="content-wrap widget-gallery">
+                            <header class="section-heading">
+            <h2>PHOTO GALLERY</h2>
+            <span>HERE ARE SOME PHOTOS FOM OUR CHURCH LIFE</span>
+        </header>
+                    <div class="lightbox-gallery">
+                        <a href="images/work/01.jpg">
+                            <img src="images/work/01.jpg" alt=""/>
+                        </a>
+                        <a href="images/work/02.jpg">
+                            <img src="images/work/02.jpg" alt=""/>
+                        </a>
+                        <a href="images/work/03.jpg">
+                            <img src="images/work/03.jpg" alt=""/>
+                        </a>
+                        <a href="images/work/04.jpg">
+                            <img src="images/work/04.jpg" alt=""/>
+                        </a>
+                        <a href="images/work/05.jpg">
+                            <img src="images/work/05.jpg" alt=""/>
+                        </a>
+                        <a href="images/work/06.jpg">
+                            <img src="images/work/06.jpg" alt=""/>
+                        </a>
+						                        <a href="images/work/07.jpg">
+                            <img src="images/work/07.jpg" alt=""/>
+                        </a>
+						                        <a href="images/work/08.jpg">
+                            <img src="images/work/08.jpg" alt=""/>
+                        </a>
+						                        <a href="images/work/09.jpg">
+                            <img src="images/work/09.jpg" alt=""/>
+                        </a>
+						                        <a href="images/work/10.jpg">
+                            <img src="images/work/10.jpg" alt=""/>
+                        </a>
+						                        <a href="images/work/11.jpg">
+                            <img src="images/work/11.jpg" alt=""/>
+                        </a>
+						                        <a href="images/work/12.jpg">
+                            <img src="images/work/12.jpg" alt=""/>
+                        </a>
+						<a href="images/work/13.jpg">
+                            <img src="images/work/13.jpg" alt=""/>
+                        </a>
+						<a href="images/work/14.jpg">
+                            <img src="images/work/14.jpg" alt=""/>
+                        </a>
+						<a href="images/work/15.jpg">
+                            <img src="images/work/15.jpg" alt=""/>
+                        </a>
+						<a href="images/work/16.jpg">
+                            <img src="images/work/16.jpg" alt=""/>
+                        </a>
+						<a href="images/work/17.jpg">
+                            <img src="images/work/17.jpg" alt=""/>
+                        </a>
+						<a href="images/work/18.jpg">
+                            <img src="images/work/18.jpg" alt=""/>
+                        </a>
+						<a href="images/work/19.jpg">
+                            <img src="images/work/19.jpg" alt=""/>
+                        </a>
+						<a href="images/work/20.jpg">
+                            <img src="images/work/20.jpg" alt=""/>
+                        </a>
+                    </div>
+                </div>
+            
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us -->
+<section id="about-us" class="section about-us">
+    <div class="container">
+	
+	        <header class="section-heading">
+            <h2>ABOUT THE CHURCH</h2>
+                    </header><!-- section-heading -->
+
+        <div class="row">
+
+            <div class="col-sm-8 col-sm-offset-2">
+
+
+                <div role="tabpanel">
+
+                    <!-- Nav tabs start-->
+                    <ul class="nav nav-tabs font-alt" role="tablist">
+                    <li class="active">
+                            <a href="#sales" data-toggle="tab"><span class="icon-basket"></span> Our Calling</a>
+                        </li>
+						<li>
+                            <a href="#support" data-toggle="tab"><span class="icon-tools-2"></span> Our History</a>
+                        </li>
+						<li>
+                            <a href="#sales2" data-toggle="tab"><span class="icon-basket"></span> Our Beliefs</a>
+                        </li>
+                    </ul>
+                    <!-- Nav tabs end -->
+
+                    <!-- Tab panes start-->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="sales">
+					<div class="e91-59 x-text">
+					<p class="led">As a Christ-centred Church in New Zealand in the Wesleyan stream we are called to exalt Jesus Christ by:</p>
+					</div>
+					<div class="e91-60 x-text">
+					<ul>
+					<li>Equipping believers</li>
+					<li>Developing leaders</li>
+					<li>Multiplying churches</li>
+					<li>Transforming communities</li>
+					<li>Discipling across the generations</li>
+					</ul>
+					</div>
+
+						<p><strong>Exalting Jesus Christ:</strong></p>
+						<p>Jesus Christ is evidenced in both preaching and focus. It is the foundation and focus of our evangelism, discipleship and compassion. Jesus said, &ldquo;&hellip;when I am lifted up &hellip; I will draw everyone to myself." (John 12:32). It is the heartbeat of our worship, both corporately and in the life and service of believers.</p>
+						<p>&nbsp;</p>
+						<p><strong>Equipping Believers:</strong></p>
+						<p>We accept the Great Commission's instruction for us to go and make disciples. This includes inviting believers to receive God's gift of the Holy Spirit, enabling them to live holy lives, fulfilling the Great Commandment to love God completely and their neighbours as themselves.</p>
+						<p>&nbsp;</p>
+						<p><strong>Developing Leaders:</strong></p>
+						<p>Educated and competent leadership has always been a characteristic of effective Wesleyan work and witness. We equip and empower those called to leadership in the church through an integrated training of head, heart, hand and habits expressed in the paradigm of praxis and preparation (doing and being). The Wesleyan Methodist Church of New Zealand strives to have a Godly education for our leaders which enables them to be well equipped and fruitful in ministry.</p>
+						<p>&nbsp;</p>
+						<p><strong>Multiplying:</strong></p>
+						<p>We recognise the condition of all persons outside of the saving knowledge of Jesus Christ and fully embrace the responsibility of the Great Commission (Matt 28:18-20). This authentically expresses the passion of our Saviour, who came to seek and to save the lost. We seek to do this by planting new congregations in New Zealand, working with other Christian groups where this will strengthen our Christian witness, as well as by actively participating in Christian mission overseas.</p>
+						<p>&nbsp;</p>
+						<p><strong>Transforming our Community:</strong></p>
+						<p>We were born in societal reformation and affirm that holy lives bring a holy impact upon culture. This includes both evangelism and compassion. We recognise that the key to the reforming of society is the transformation of persons by the grace of God. We encourage and empower believers to allow God to transform them into new persons (Rom 12:2) and to share the benefits of the gospel with all people everywhere. We seek to influence our local communities with Christian grace and wisdom by working with, and praying for, government and other leaders.</p>
+						<p>&nbsp;</p>
+						<p><strong>Discipling across Generations:</strong></p>
+						<p>We value the multi-generational nature of the body of Christ and encourage each generation to disciple those who follow them (Titus 2). We value the participation of all generations including children, youth and younger adults, and are committed to resourcing people as they grow and take their place in the church today.</p>
+
+
+                        </div>
+                        <!-- Tab start -->
+                        <div class="tab-pane" id="support">
+						<pclass="led">The Wesleyan Methodist Church of New Zealand (WMCNZ) has grown out of a revival movement that has historically given itself one mission &ndash; the spreading of Scriptural holiness throughout the nation. This message that ignited the Wesleyan revival in the 18th century in England was the announcement that God through Christ can forgive the sin which destroys us and release and reshape God's nature in us by His Holy Spirit. This new life brought about profound personal and social transformation.</p>
+						<p>The Wesleyan Methodist Church shares the dynamic orthodox Christian faith together with certain distinctive emphases. It encourages people to move toward maturity in discipleship, described by John Wesley as "Scriptural Holiness". This includes an assurance and certainty of salvation and commitment to continuing personal and social transformation. We believe in the priesthood of all believers as stated in Scripture and recognises that God calls each person to tasks and gifts of ministry empowered by the Holy Spirit. The call of God upon some may lead the Church to set them aside for specific responsibilities. Some are called to the Ministry of Word, Sacraments and Pastoral Care and the Church recognises this by ordination and the laying-on of hands and prayer for the anointing and blessing of the Holy Spirit. Others are called to various ministries that the Church recognises appropriately.</p>
+						<p>The Wesleyan Methodist Church recognises the Sacraments of Baptism and Holy Communion and encourages all partners to seek to worship together on the Lord's day.</p>
+						<p>We are a multi-racial Church family which delights in the variety of cultures and languages God has given us. When we gather together annually we celebrate the vibrancy of our faith in Jesus Christ through varied cultural expression. We believe that multi-cultural New Zealand will only be effectively evangelised by a multi-cultural mission.</p>
+						<p>We are a mission-minded movement which places local churches at the heart of mission in their contexts. Our movement is a &ldquo;connexion&rdquo; (a connection with the cross at the centre) encouraging one another to love God with all our heart, mind, soul &amp; strength. Our network of local churches is joined together by common beliefs, shared vision and values, and accountable practices. Our national leaders are called to equip and empower local congregations for local, national and international mission.</p>
+						<p>All persons are welcomed into partnership with the Wesleyan Methodist Church of New Zealand who express their faith in Jesus Christ as Saviour and Lord, seek to live a holy life in accordance with the Scriptures and want to share in the mission and responsibilities of being the people of God in their community through their local congregation.</p>
+                        </div>
+                        <!-- Tab end -->
+
+                        <!-- Tab start -->
+
+                        <!-- Tab end -->			
+
+						
+						<div class="tab-pane" id="sales2">
+						<div class="e91-59 x-text">
+						<ul class="plain-list">
+						<li>Wesleyans believe in one God, who is Father, Son, and Holy Spirit, and the Saviour of all who put their faith in Him alone for eternal life.</li>
+						<br><li>We believe that those who are made new in Christ are called to be holy in character and conduct, and can only live this way by being filled with the Lord's Spirit.</li>
+						<br><li>We believe in the Bible and its sufficiency to establish our faith and conduct.</li>
+						<br><li>We believe God wills for people everywhere to know Him and be made new in Christ.</li>
+						<br><li>We believe that the purpose of the Church is to worship God in spirit and in truth, and to reach a lost and fallen world with the gospel of Jesus Christ through its worship, witness, and loving deeds.</li>
+						</ul>
+						</div>
+                        </div>
+
+                    </div>
+                    <!-- Tab panes end-->
+                </div>
+            </div>
+
+        </div><!-- .row -->
+    </div>
+</section>
+
